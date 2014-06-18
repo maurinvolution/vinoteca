@@ -115,6 +115,18 @@ table img{
     margin-left: 10px;
 }
 
+#filtros
+{
+    float: left;
+    text-decoration: none;
+    list-style: none;
+}
+
+#producto
+{
+    float: right;
+    
+}
 
 /* ==========================================================================
    Helper classes
