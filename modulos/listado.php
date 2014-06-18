@@ -1,4 +1,4 @@
-<header>
+<header id="listado">
     <nav id="nav">
     <ul>
         <li><a href="#">Vinos</a></li>
@@ -15,7 +15,7 @@
 </header>
 
 <aside>
-<nav>
+<nav id="filtros">
     <ul>
     <li class="oculto">Color 
         <ul class="sombra">
