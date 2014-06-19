@@ -1,1 +1,16 @@
-s
+#producto 
+{
+	width: 200px;
+}
+
+#producto img_prod
+{
+	float: left;
+}
+
+#producto datos_prod
+{
+	float: right;
+	width: 70%;
+}
+
