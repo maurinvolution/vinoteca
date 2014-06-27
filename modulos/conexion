@@ -1,0 +1,24 @@
+<?php
+function conectar()
+{
+	global $con;
+	global $cone;
+	$ret = false;
+		$con = mysql_connect('localhost','root','');
+		if ($con != false)
+		{
+				mysql_select_db("subodega",$con);
+				$cone=$con;
+				$ret = true;
+		}
+	
+	return $ret;
+}
+function desconectar()
+{
+	global $con;
+	mysql_close($con);
+	unset($GLOBALS['con']);
+}
+
+?>
