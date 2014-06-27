@@ -1,0 +1,37 @@
+<?php
+include ("modulos/incluir.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href='imagenes/favicon.png' rel='shortcut icon' type='image/png'>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>.- Dr. Soft -.</title>
+</head>
+<body>
+<header id="listado">
+    <nav id="nav">
+    <ul>
+        <li><a href='home.php?pagina=listado&var=vinos'>Vinos</a></li>
+        <li><a href="home.php?pagina=listado&var=whiskies">Whiskies</a></li>
+        <li><a href="home.php?pagina=listado&var=champagne">Champagne</a></li>
+        <li><a href="home.php?pagina=listado&var=regalos">Regalos empresariales</a></li>
+        <li><a href="home.php?pagina=listado&var=bebidas">Bebidas de alto grado</a></li>
+        <li><a href="home.php?pagina=listado&var=accesorios">Accesorios</a></li>
+        <li><a href="#">Buscar</a></li>
+        <li><a href="home.php?pagina=listado&var=promo">Promocioness</a></li>
+        
+    </ul>
+    </nav>
+</header>
+<div id="contenido">
+			<?php 
+			
+				if($_GET[pagina]!=""){
+					include("modulos/".$_GET[pagina].".php");
+				}
+				//else { include("modulos/icono.php");}
+			?>
+</div>
+</body>
+</html>
